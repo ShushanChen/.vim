@@ -246,4 +246,5 @@ filetype plugin indent on
 syntax on
 
 nmap <F5> :! g++ % -o %:r && ./%:r < %:r.in<cr>
+nmap <F4> :! g++ % -o %:r && ./%:r <cr>
 
