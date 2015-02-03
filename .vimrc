@@ -182,6 +182,8 @@ Plugin 'ayang/AutoComplPop'
 Plugin 'wavded/vim-stylus'
 Plugin 'mxw/vim-jsx'
 Plugin 'brettof86/vim-swigjs'
+Plugin 'scrooloose/nerdtree'
+Plugin 'majutsushi/tagbar'
 
 Plugin 'junegunn/vim-easy-align'
   vmap <Enter> <Plug>(EasyAlign)
@@ -245,6 +247,14 @@ call vundle#end()
 filetype plugin indent on
 syntax on
 
-nmap <F5> :! g++ % -o %:r && ./%:r < %:r.in<cr>
-nmap <F4> :! g++ % -o %:r && ./%:r <cr>
+nmap <F7> :! g++ % -o %:r && ./%:r < %:r.in<cr>
+nmap <F6> :! g++ % -o %:r && ./%:r <cr>
+nmap <F4> :TagbarOpen <cr>
+nmap <F5> :TagbarClose <cr>
+nmap <F2> :NERDTreeFocus <cr>
+nmap <F3> :NERDTreeClose <cr>
 
+nmap <c-j> <c-w>j
+nmap <c-k> <c-w>k
+nmap <c-l> <c-w>l
+nmap <c-h> <c-w>h
